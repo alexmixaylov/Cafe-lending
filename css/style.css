@@ -18,6 +18,10 @@ body a {
   text-decoration: none;
 }
 
+body.lock-scroll {
+  overflow: hidden;
+}
+
 .wrapper {
   max-width: 100%;
   margin: 0 auto;
@@ -30,7 +34,7 @@ body a {
   z-index: 999;
   display: flex;
   justify-content: space-between;
-  padding: 15px 15px 0 15px;
+  padding: 10px 15px 0 15px;
 }
 .header .logo {
   width: 50px;
@@ -83,22 +87,25 @@ body a {
 }
 .header .menu {
   width: 100%;
-  height: 800px;
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-wrap: wrap;
   position: fixed;
   left: 0;
   top: 0;
+  padding-bottom: 100px;
   z-index: 99;
   background: #B71C1C;
   transition: 0.3s all;
+  overflow-y: auto !important;
 }
 .header .menu.hidden {
-  top: -200%;
+  top: -300%;
 }
 .header .menu .menu-links {
+  width: 300px;
   text-align: center;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,8 +118,6 @@ body a {
   background-color: rgba(255, 255, 255, 0);
 }
 .header .menu .menu-links li {
-  width: 175px;
-  height: 52px;
   margin-top: 20px;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -124,7 +129,8 @@ body a {
   background-color: #E8C300 !important;
 }
 .header .menu .menu-links li .link {
-  height: 100%;
+  width: 175px;
+  padding: 15px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,13 +149,6 @@ body a {
   flex-wrap: wrap;
   align-items: space-between;
   justify-content: space-between;
-}
-.main .main-content.hidden {
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  display: none;
 }
 .main .main-content .subtitle {
   width: 100%;
@@ -226,4 +225,134 @@ body a {
 }
 .main .main-content .social-links .link:not(:first-child) {
   margin-top: 15px;
+}
+.main .about-us {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .about-us .title {
+  font-family: Caveat;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 48px;
+  color: #000;
+}
+.main .about-us .line {
+  width: 40px;
+  height: 5px;
+  background: #E8C300;
+  border-radius: 50px;
+}
+.main .about-us .text {
+  font-family: Open Sans;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  max-width: 384px;
+}
+.main .about-us .img {
+  max-width: 384px;
+}
+.main .about-us .img img {
+  max-width: 384px;
+}
+.main .team {
+  background: url(../images/team-bg@1x.jpg);
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 15px 0px 15px;
+}
+.main .team .subtitle {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.5em;
+}
+.main .team .title {
+  font-family: Caveat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0;
+}
+.main .team .text {
+  max-width: 300px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+.main .reserve {
+  padding: 0 15px;
+}
+.main .reserve .title {
+  margin: 55px 0 0 0;
+  font-family: Caveat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main .reserve .line {
+  margin: 15px auto;
+  background: #E8C300;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+}
+.main .reserve .form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .reserve .form .form-item {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.main .reserve .form .form-item .label {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(51, 51, 51, 0.5);
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+.main .reserve .form .form-item .input, .main .reserve .form .form-item .select {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: #E5E5E5;
+  font-size: 20px;
+}
+.main .reserve .form .form-item .select {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(51, 51, 51, 0.5);
+  position: absolute;
+  padding-left: 15px;
+}
+.main .reserve .form .select-item {
+  width: 49%;
+}
+.main .reserve .form .button {
+  width: 100%;
+  height: 60px;
+  background: #E8C300;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
 }
