@@ -602,8 +602,18 @@ body.lock-scroll {
             }
         }
     }
+    .map{
+        .img {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 .footer {
+    display: flex;
+    justify-content: space-around;
     height: 100px;
     background: rgba(0, 0, 0, 0.9);
     color: rgba(255, 255, 255, 0.5);

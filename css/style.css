@@ -566,8 +566,16 @@ body.lock-scroll {
   margin-right: 5px;
   width: 12px;
 }
+.main .map .img {
+  width: 100%;
+}
+.main .map .img img {
+  width: 100%;
+}
 
 .footer {
+  display: flex;
+  justify-content: space-around;
   height: 100px;
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.5);
