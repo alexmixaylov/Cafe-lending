@@ -15,14 +15,16 @@ window.addEventListener('DOMContentLoaded', function name() {
 
     menuBtn.addEventListener('click', openMenu);
 
+    // function resizeTitle() {
+    //     let image = document.querySelectorAll('.lol'),
+    //         title = document.querySelectorAll('.azaz');
 
-    // let select = document.querySelectorAll('.select');
+    //         for (let i = 0; i < image.length; i++) {
+    //             title[i].getElementsByClassName.height = image[i].scrollHeight;
+    //             console.log('ok');
+    //         }
 
-
-    // let option = select[1].querySelectorAll('.option');
-
-    // for (let i = 0; i < option.length; i++) {
-    //     console.log(option[i].value);
-        
     // }
+
+    // resizeTitle();
 });
