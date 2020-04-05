@@ -1,0 +1,172 @@
+@media all and (min-width: 1000px) {
+  .wrapper {
+    max-width: 1440px;
+  }
+
+  .header {
+    height: 100px;
+    max-width: 1440px;
+  }
+  .header .logo {
+    margin: 15px auto;
+    width: 150px;
+    height: 150px;
+  }
+  .header .burger-button {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    display: none;
+  }
+  .header .menu {
+    height: 70px;
+    background: rgba(255, 255, 255, 0);
+    justify-content: space-between;
+    padding: 0 80px;
+  }
+  .header .menu.hidden {
+    top: 0;
+  }
+  .header .menu .menu-links {
+    z-index: 999;
+    width: 37%;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .header .menu .menu-links.top-menu {
+    margin-top: 0;
+  }
+  .header .menu .menu-links li {
+    border: none;
+    width: 100px;
+  }
+  .header .menu .menu-links li:last-child {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .header .menu .menu-links li .link {
+    width: 100px;
+  }
+
+  .main .main-content {
+    background: url(../images/header-bg@2x.jpg);
+  }
+  .main .main-content .subtitle {
+    letter-spacing: 0.5em;
+  }
+  .main .main-content .title {
+    font-size: 96px;
+  }
+  .main .main-content .navigation {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .main .main-content .navigation .link:last-child {
+    margin: 0 0 0 40px;
+  }
+  .main .main-content .bottom-content {
+    max-height: 250px;
+  }
+  .main .main-content .bottom-content .schedule {
+    top: 0;
+  }
+  .main .main-content .bottom-content .scroll-btn {
+    margin: 130px 0;
+  }
+  .main .main-content .bottom-content .social-links {
+    top: -200px;
+  }
+  .main .about-us {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px 80px;
+    justify-content: space-between;
+  }
+  .main .about-us .text-wrapper {
+    max-width: 600px;
+  }
+  .main .team {
+    background: url(../images/team-bg@2x.jpg);
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 50px 80px;
+    justify-content: space-between;
+  }
+  .main .team .subtitle {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .main .team .text-wrapper {
+    max-width: 600px;
+  }
+  .main .reserve {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px 40px 80px;
+  }
+  .main .reserve .form-wrapper {
+    max-width: 565px;
+  }
+  .main .dishes {
+    background: url(../images/dishes-bg@2x.jpg);
+    padding: 20px 80px;
+  }
+  .main .dishes .subtitle {
+    margin-bottom: 50px;
+  }
+  .main .dishes .dish {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main .dishes .dish .text-wrapper {
+    max-width: 560px;
+  }
+  .main .personal-events {
+    background: url(../images/events-bg@2x.jpg);
+    padding: 50px 80px 30px 80px;
+  }
+  .main .personal-events .title {
+    margin: 0 0 40px 0;
+    width: 100%;
+  }
+  .main .personal-events .events {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main .personal-events .events .event {
+    max-width: 600px;
+  }
+  .main .personal-events .events .event:nth-child(even) {
+    margin-top: 0;
+  }
+  .main .personal-events .note {
+    margin: 40px 0 0 0;
+  }
+  .main .contacts {
+    padding: 100px 80px;
+  }
+  .main .contacts .form {
+    margin-top: 50px;
+  }
+  .main .contacts .form .form-item {
+    width: 49.5%;
+  }
+  .main .contacts .form .form-item.last {
+    width: 100%;
+  }
+  .main .contacts .form .button {
+    width: 49.5%;
+    order: 2;
+  }
+  .main .contacts .form .note {
+    margin: 0;
+  }
+  .main .contacts .form .note .link:not(:first-child) {
+    margin-left: 50px;
+  }
+}

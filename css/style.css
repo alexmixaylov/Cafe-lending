@@ -107,7 +107,6 @@ body input, body select, body button {
   background: #B71C1C;
   transition: 0.3s all;
   overflow-y: auto;
-  animation: menu-open 3s all;
 }
 .header .menu.hidden {
   top: -100vh;
@@ -208,7 +207,7 @@ body input, body select, body button {
   justify-content: center;
   position: relative;
 }
-.main .main-content .schedule {
+.main .main-content .bottom-content .schedule {
   position: absolute;
   top: 170px;
   left: 23px;
@@ -222,17 +221,17 @@ body input, body select, body button {
   line-height: 12px;
   color: #ffffff;
 }
-.main .main-content .scroll-btn {
+.main .main-content .bottom-content .scroll-btn {
   margin: 130px 0;
   max-height: 60px;
 }
-.main .main-content .social-links {
+.main .main-content .bottom-content .social-links {
   position: absolute;
   right: 0;
   display: flex;
   flex-direction: column;
 }
-.main .main-content .social-links .link:not(:first-child) {
+.main .main-content .bottom-content .social-links .link:not(:first-child) {
   margin-top: 15px;
 }
 .main .about-us {
@@ -241,26 +240,31 @@ body input, body select, body button {
   flex-direction: column;
   align-items: center;
 }
-.main .about-us .title {
+.main .about-us .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 384px;
+}
+.main .about-us .text-wrapper .title {
   font-family: Caveat;
   font-weight: bold;
   font-size: 42px;
   line-height: 48px;
   color: #000;
 }
-.main .about-us .line {
+.main .about-us .text-wrapper .line {
   width: 40px;
   height: 5px;
   background: #E8C300;
   border-radius: 50px;
 }
-.main .about-us .text {
+.main .about-us .text-wrapper .text {
   font-family: Open Sans;
   font-style: italic;
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
-  max-width: 384px;
   padding: 0 15px;
 }
 .main .about-us .img {
@@ -285,7 +289,10 @@ body input, body select, body button {
   line-height: 14px;
   letter-spacing: 0.5em;
 }
-.main .team .title {
+.main .team .text-wrapper {
+  max-width: 300px;
+}
+.main .team .text-wrapper .title {
   font-family: Caveat;
   font-style: normal;
   font-weight: bold;
@@ -293,8 +300,7 @@ body input, body select, body button {
   line-height: 48px;
   margin: 0;
 }
-.main .team .text {
-  max-width: 300px;
+.main .team .text-wrapper .text {
   font-style: italic;
   font-weight: 600;
   font-size: 18px;
@@ -309,7 +315,7 @@ body input, body select, body button {
 .main .reserve {
   padding: 55px 15px;
 }
-.main .reserve .title {
+.main .reserve .form-wrapper .title {
   margin: 0;
   font-family: Caveat;
   font-style: normal;
@@ -319,25 +325,25 @@ body input, body select, body button {
   text-transform: uppercase;
   text-align: center;
 }
-.main .reserve .line {
+.main .reserve .form-wrapper .line {
   margin: 15px auto;
   background: #E8C300;
   width: 40px;
   height: 5px;
   border-radius: 5px;
 }
-.main .reserve .form {
+.main .reserve .form-wrapper .form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.main .reserve .form .form-item {
+.main .reserve .form-wrapper .form .form-item {
   width: 100%;
   height: 60px;
   margin-bottom: 10px;
   position: relative;
 }
-.main .reserve .form .form-item .label {
+.main .reserve .form-wrapper .form .form-item .label {
   font-size: 14px;
   line-height: 19px;
   color: rgba(51, 51, 51, 0.5);
@@ -345,14 +351,15 @@ body input, body select, body button {
   left: 15px;
   top: 18px;
 }
-.main .reserve .form .form-item .input, .main .reserve .form .form-item .select {
+.main .reserve .form-wrapper .form .form-item .input,
+.main .reserve .form-wrapper .form .form-item .select {
   width: 100%;
   height: 100%;
   border-radius: 5px;
   background: #E5E5E5;
   font-size: 20px;
 }
-.main .reserve .form .form-item .select {
+.main .reserve .form-wrapper .form .form-item .select {
   font-size: 14px;
   line-height: 19px;
   color: rgba(51, 51, 51, 0.5);
@@ -364,10 +371,10 @@ body input, body select, body button {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
-.main .reserve .form .select-item {
+.main .reserve .form-wrapper .form .select-item {
   width: 49%;
 }
-.main .reserve .form .button {
+.main .reserve .form-wrapper .form .button {
   width: 100%;
   height: 60px;
   background: #E8C300;
@@ -379,6 +386,14 @@ body input, body select, body button {
 }
 .main .reserve .img img {
   max-width: 98%;
+}
+.main .reserve .note {
+  color: rgba(51, 51, 51, 0.5);
+  font-size: 12px;
+  line-height: 12px;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
 }
 .main .dishes {
   background: url(../images/dishes-bg@1x.jpg);
@@ -398,7 +413,7 @@ body input, body select, body button {
 .main .dishes .dish .img img {
   max-width: 100%;
 }
-.main .dishes .dish .title {
+.main .dishes .dish .text-wrapper .title {
   text-transform: uppercase;
   font-family: Caveat;
   font-style: normal;
@@ -408,14 +423,14 @@ body input, body select, body button {
   color: #fff;
   margin: 0;
 }
-.main .dishes .dish .line {
+.main .dishes .dish .text-wrapper .line {
   margin: 15px auto;
   background: #E8C300;
   width: 40px;
   height: 5px;
   border-radius: 5px;
 }
-.main .dishes .dish .text {
+.main .dishes .dish .text-wrapper .text {
   font-size: 18px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.9);
@@ -435,7 +450,7 @@ body input, body select, body button {
   margin: 0 20px;
 }
 .main .dishes .slider-pagination .round.active {
-  background: white;
+  background-color: #fff;
 }
 .main .personal-events {
   background: url(../images/events-bg@1x.jpg);
@@ -466,7 +481,7 @@ body input, body select, body button {
   transform-origin: 100% 0;
   display: flex;
   align-items: center;
-  width: 75.97%;
+  width: 79.2%;
   height: 50px;
   background: #000;
   text-indent: 20px;
@@ -536,6 +551,10 @@ body input, body select, body button {
   position: absolute;
   left: 15px;
   top: 18px;
+  transition: 0.3s all;
+}
+.main .contacts .form .form-item .input:focus ~ .label {
+  opacity: 0;
 }
 .main .contacts .form .form-item .input {
   width: 100%;
@@ -543,6 +562,10 @@ body input, body select, body button {
   border-radius: 5px;
   background: #E5E5E5;
   font-size: 20px;
+  padding-left: 15px;
+}
+.main .contacts .form .form-item input:focus label::-webkit-input-placeholder {
+  opacity: 0;
 }
 .main .contacts .form .button {
   width: 100%;
@@ -554,13 +577,13 @@ body input, body select, body button {
   font-size: 12px;
   line-height: 20px;
 }
-.main .contacts .note {
+.main .contacts .form .note {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.main .contacts .note .link {
+.main .contacts .form .note .link {
   color: rgba(51, 51, 51, 0.5);
   font-weight: bold;
   font-size: 12px;
@@ -568,7 +591,7 @@ body input, body select, body button {
   display: flex;
   align-items: center;
 }
-.main .contacts .note .link .icon {
+.main .contacts .form .note .link .icon {
   margin-right: 5px;
   width: 12px;
 }
@@ -582,6 +605,7 @@ body input, body select, body button {
 .footer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   height: 100px;
   background: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.5);

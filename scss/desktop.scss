@@ -1,0 +1,173 @@
+@media all and (min-width: 1000px) {
+    .wrapper {
+        max-width: 1440px;
+    }
+    .header {
+        height: 100px;
+        max-width: 1440px;
+        .logo {
+            margin: 15px auto;
+            width: 150px;
+            height: 150px;
+        }
+        .burger-button {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            clip: rect(0 0 0 0);
+            display: none;
+        }
+        .menu {
+            height: 70px;
+            background: rgba(255, 255, 255, 0);
+            justify-content: space-between;
+            padding: 0 80px;
+            &.hidden {
+                top: 0;
+            }
+            .menu-links {
+                z-index: 999;
+                width: 37%;
+                justify-content: space-between;
+                flex-direction: row;
+                    &.top-menu {
+                        margin-top: 0;
+                    }
+                    li {
+                        border: none;
+                        width: 100px;
+                        &:last-child {
+                            background-color: rgba(255, 255, 255, 0);
+                        }
+                        .link {
+                            width: 100px;
+                        }
+                    }
+            }
+        }
+    }
+    .main {
+        .main-content {
+            background: url(../images/header-bg@2x.jpg);
+            .subtitle {
+                letter-spacing: 0.5em;
+            }
+            .title {
+                font-size: 96px;
+            }
+            .navigation {
+                flex-direction: row;
+                justify-content: center;
+                .link:last-child {
+                    margin: 0 0 0 40px;
+                }
+            }
+            .bottom-content {
+                max-height: 250px;
+                .schedule {
+                    top: 0;
+                }
+                .scroll-btn {
+                    margin: 130px 0;
+                }
+                .social-links {
+                    top: -200px;
+                }
+            }
+        }
+        .about-us {
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 100px 80px;
+            justify-content: space-between;
+                .text-wrapper {
+                    max-width: 600px;
+                }
+        }
+        .team {
+            background: url(../images/team-bg@2x.jpg);
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            padding: 50px 80px;
+            justify-content: space-between;
+            .subtitle {
+                width: 100%;
+                margin-bottom: 50px;
+            }
+            .text-wrapper {
+                max-width: 600px;
+            }
+        }
+        .reserve {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 80px 40px 80px;
+            .form-wrapper {
+                max-width: 565px;
+            }
+        }
+        .dishes {
+            background: url(../images/dishes-bg@2x.jpg);
+            padding: 20px 80px;
+            .subtitle {
+                margin-bottom: 50px;
+            }
+            .dish {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .text-wrapper {
+                    max-width: 560px;
+                }
+            }
+        }
+        .personal-events {
+            background: url(../images/events-bg@2x.jpg);
+            padding: 50px 80px 30px 80px;
+            .title {
+                margin: 0 0 40px 0;
+                width: 100%;
+            }
+            .events {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                    .event {
+                        max-width: 600px;
+                        &:nth-child(even) {
+                            margin-top: 0;
+                        }
+                    }
+            }
+            .note {
+                margin: 40px 0 0 0;
+            }
+        }
+        .contacts {
+            padding: 100px 80px;
+            .form {
+                margin-top: 50px;
+                .form-item {
+                    width: 49.5%;
+                    &.last {
+                        width: 100%;
+                    }
+                }
+                .button {
+                    width: 49.5%;
+                    order: 2;
+                }
+                .note {
+                    margin: 0;
+                    .link:not(:first-child) {
+                        margin-left: 50px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
