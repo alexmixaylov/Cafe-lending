@@ -55,20 +55,17 @@ window.addEventListener('DOMContentLoaded', function name() {
 
     linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
 
-    function changeMenuBg(top, height) {
+    window.addEventListener('scroll', function () {
+        let header = document.querySelector('.header'),
+            contentHeight = document.querySelector('.main-content').style.height;
 
-        let header = document.querySelector('.header').getBoundingClientRect().top;
-
-        top = window.scrollTop;
-        heigth = document.querySelector('.main-content').clientHeight;
-
-        // setInterval(() => {
-        //     console.log(window);
-        // }, 100);
-            
-    }
-    
-    changeMenuBg();
+        if (pageYOffset > contentHeight) {
+            header.classList.add('dark');
+        } else {
+            header.classList.remove('dark');
+        }
+        
+    });
 
 
 });

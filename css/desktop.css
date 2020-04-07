@@ -8,10 +8,14 @@
     width: 100%;
     max-width: 1920px;
   }
+  .header.dark .logo {
+    height: 50px;
+  }
   .header .logo {
     margin: 15px auto;
     width: 150px;
     height: 150px;
+    transition: 0.3s all;
   }
   .header .burger-button {
     position: absolute;
@@ -24,7 +28,7 @@
     height: 70px;
     background: rgba(255, 255, 255, 0);
     justify-content: space-between;
-    padding: 0 80px;
+    padding: 0 10%;
     overflow: hidden;
   }
   .header .menu.hidden {
@@ -41,13 +45,14 @@
   }
   .header .menu .menu-links li {
     border: none;
-    width: 100px;
+    transition: 0.3s all;
   }
   .header .menu .menu-links li:last-child {
     background-color: rgba(255, 255, 255, 0);
   }
   .header .menu .menu-links li .link {
-    width: 100px;
+    padding: 10px;
+    width: 100%;
   }
 
   .main .main-content {

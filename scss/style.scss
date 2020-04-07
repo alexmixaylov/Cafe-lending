@@ -39,8 +39,9 @@ body {
     justify-content: space-between;
     padding: 10px 15px 10px 15px;
     transition: .3s all;
-    &.scroll {
-        background-color: #000;
+    &.dark {
+        // background-color: rgba(0, 0, 0, 0.7);
+        background-color: #060606;
     }
     .logo {
         width: 50px;

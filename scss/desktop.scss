@@ -6,10 +6,16 @@
         height: 100px;
         width: 100%;
         max-width: 1920px;
+        &.dark {
+            .logo {
+                height: 50px;
+            }
+        }
         .logo {
             margin: 15px auto;
             width: 150px;
             height: 150px;
+            transition: .3s all;
         }
         .burger-button {
             position: absolute;
@@ -22,7 +28,7 @@
             height: 70px;
             background: rgba(255, 255, 255, 0);
             justify-content: space-between;
-            padding: 0 80px;
+            padding: 0 10%;
             overflow: hidden;
             &.hidden {
                 top: 0;
@@ -37,12 +43,13 @@
                     }
                     li {
                         border: none;
-                        width: 100px;
+                        transition: .3s all;
                         &:last-child {
                             background-color: rgba(255, 255, 255, 0);
                         }
                         .link {
-                            width: 100px;
+                            padding: 10px;
+                            width: 100%;
                         }
                     }
             }
