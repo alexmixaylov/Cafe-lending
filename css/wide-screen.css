@@ -1,0 +1,29 @@
+@media all and (min-width: 1441px) {
+  .wrapper {
+    max-width: 1930px !important;
+  }
+
+  .main .main-content {
+    background: url(../images/header-bg@wide.jpg) !important;
+    background-position: center !important;
+    padding-top: 11%;
+    height: 800px;
+  }
+  .main .about-us, .main .reserve, .main .contacts {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .main .team, .main .dishes, .main .personal-events {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+  }
+  .main .team {
+    background: url(../images/team-bg@wide.jpg) !important;
+  }
+  .main .dishes {
+    background: url(../images/dishes-bg@wide.jpg) !important;
+  }
+  .main .personal-events {
+    background: url(../images/events-bg@wide.jpg) !important;
+  }
+}

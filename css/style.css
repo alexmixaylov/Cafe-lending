@@ -149,10 +149,10 @@ body input, body select, body button {
 }
 
 .main .main-content {
-  background: url(../images/header-bg@1x.jpg) no-repeat;
+  background: url(../images/header-bg@1x.jpg);
   background-size: 100% 100%;
   position: relative;
-  padding: 20% 15px 0 15px;
+  padding: 20% 5% 0 5%;
   display: flex;
   flex-wrap: wrap;
   align-items: space-between;
@@ -275,6 +275,7 @@ body input, body select, body button {
 }
 .main .team {
   background: url(../images/team-bg@1x.jpg);
+  background-size: 100% 100%;
   color: #ffffff;
   text-align: center;
   display: flex;
@@ -314,6 +315,10 @@ body input, body select, body button {
 }
 .main .reserve {
   padding: 55px 15px;
+  max-width: 100%;
+}
+.main .reserve .form-wrapper {
+  max-width: 100%;
 }
 .main .reserve .form-wrapper .title {
   margin: 0;
@@ -346,7 +351,7 @@ body input, body select, body button {
 .main .reserve .form-wrapper .form .form-item .label {
   font-size: 14px;
   line-height: 19px;
-  color: rgba(51, 51, 51, 0.5);
+  color: rgba(51, 51, 51, 0.7);
   position: absolute;
   left: 15px;
   top: 18px;

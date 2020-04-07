@@ -1,11 +1,12 @@
-@media all and (min-width: 1000px) {
+@media all and (min-width: 700px) {
   .wrapper {
     max-width: 1440px;
   }
 
   .header {
     height: 100px;
-    max-width: 1440px;
+    width: 100%;
+    max-width: 1920px;
   }
   .header .logo {
     margin: 15px auto;
@@ -24,6 +25,7 @@
     background: rgba(255, 255, 255, 0);
     justify-content: space-between;
     padding: 0 80px;
+    overflow: hidden;
   }
   .header .menu.hidden {
     top: 0;
@@ -49,7 +51,8 @@
   }
 
   .main .main-content {
-    background: url(../images/header-bg@2x.jpg);
+    background: url(../images/header-bg@2x.jpg) no-repeat;
+    background-position: center;
   }
   .main .main-content .subtitle {
     letter-spacing: 0.5em;
@@ -76,6 +79,9 @@
   .main .main-content .bottom-content .social-links {
     top: -200px;
   }
+  .main .about-us .img, .main .team .img, .main .reserve .img, .main .dishes .img, .main .events .img {
+    max-width: 41.661%;
+  }
   .main .about-us {
     flex-direction: row;
     flex-wrap: wrap;
@@ -83,7 +89,7 @@
     justify-content: space-between;
   }
   .main .about-us .text-wrapper {
-    max-width: 600px;
+    max-width: 41.7%;
   }
   .main .team {
     background: url(../images/team-bg@2x.jpg);
@@ -97,17 +103,17 @@
     margin-bottom: 50px;
   }
   .main .team .text-wrapper {
-    max-width: 600px;
+    max-width: 41.7%;
   }
   .main .reserve {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 80px 40px 80px;
+    padding: 100px 80px 40px 9.375%;
   }
   .main .reserve .form-wrapper {
-    max-width: 565px;
+    max-width: 39.3%;
   }
   .main .dishes {
     background: url(../images/dishes-bg@2x.jpg);
@@ -122,11 +128,11 @@
     align-items: center;
   }
   .main .dishes .dish .text-wrapper {
-    max-width: 560px;
+    max-width: 38.957%;
   }
   .main .personal-events {
     background: url(../images/events-bg@2x.jpg);
-    padding: 50px 80px 30px 80px;
+    padding: 50px 5.556% 30px 5.556%;
   }
   .main .personal-events .title {
     margin: 0 0 40px 0;

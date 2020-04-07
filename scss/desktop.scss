@@ -1,10 +1,11 @@
-@media all and (min-width: 1000px) {
+@media all and (min-width: 700px) {
     .wrapper {
         max-width: 1440px;
     }
     .header {
         height: 100px;
-        max-width: 1440px;
+        width: 100%;
+        max-width: 1920px;
         .logo {
             margin: 15px auto;
             width: 150px;
@@ -22,6 +23,7 @@
             background: rgba(255, 255, 255, 0);
             justify-content: space-between;
             padding: 0 80px;
+            overflow: hidden;
             &.hidden {
                 top: 0;
             }
@@ -48,7 +50,8 @@
     }
     .main {
         .main-content {
-            background: url(../images/header-bg@2x.jpg);
+            background: url(../images/header-bg@2x.jpg) no-repeat;
+            background-position: center;
             .subtitle {
                 letter-spacing: 0.5em;
             }
@@ -75,13 +78,18 @@
                 }
             }
         }
+        .about-us, .team, .reserve, .dishes, .events {
+            .img {
+                max-width: 41.661%;
+            }
+        }
         .about-us {
             flex-direction: row;
             flex-wrap: wrap;
             padding: 100px 80px;
             justify-content: space-between;
                 .text-wrapper {
-                    max-width: 600px;
+                    max-width: 41.7%;
                 }
         }
         .team {
@@ -95,7 +103,7 @@
                 margin-bottom: 50px;
             }
             .text-wrapper {
-                max-width: 600px;
+                max-width: 41.7%;
             }
         }
         .reserve {
@@ -103,9 +111,9 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            padding: 100px 80px 40px 80px;
+            padding: 100px 80px 40px 9.375%;
             .form-wrapper {
-                max-width: 565px;
+                max-width: 39.3%;
             }
         }
         .dishes {
@@ -119,13 +127,13 @@
                 justify-content: space-between;
                 align-items: center;
                 .text-wrapper {
-                    max-width: 560px;
+                    max-width: 38.957%;
                 }
             }
         }
         .personal-events {
             background: url(../images/events-bg@2x.jpg);
-            padding: 50px 80px 30px 80px;
+            padding: 50px 5.556% 30px 5.556%;
             .title {
                 margin: 0 0 40px 0;
                 width: 100%;

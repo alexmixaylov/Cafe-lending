@@ -71,5 +71,4 @@ window.addEventListener('DOMContentLoaded', function name() {
     changeMenuBg();
 
 
-
 });
