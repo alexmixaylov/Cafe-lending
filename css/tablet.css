@@ -1,0 +1,42 @@
+@media (min-width: 768px) {
+  .header .menu {
+    align-items: center;
+  }
+  .header .menu .menu-links.top-menu {
+    margin: 0;
+  }
+
+  .main .main-content {
+    background: url(../images/header-bg@tablet.jpg);
+  }
+  .main .about-us .text-wrapper {
+    max-width: 80%;
+  }
+  .main .team .text-wrapper {
+    max-width: 80%;
+  }
+  .main .reserve {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main .dishes, .main .personal-events {
+    background: url(../images/dishes-bg@tablet.jpg);
+  }
+  .main .personal-events .events {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main .personal-events .events .event {
+    width: 49%;
+  }
+  .main .personal-events .events .event:nth-child(even) {
+    margin-top: 0;
+  }
+  .main .contacts {
+    padding: 50px;
+  }
+}

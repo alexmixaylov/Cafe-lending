@@ -1,5 +1,7 @@
 window.addEventListener('DOMContentLoaded', function name() {
 
+    //Menu open and close
+
     let menuBtn = document.querySelector('.burger-button');
 
     
@@ -25,6 +27,8 @@ window.addEventListener('DOMContentLoaded', function name() {
 
     menuBtn.addEventListener('click', openMenu);
 
+    //Smooth scroll from menu link to section
+
     function anchorLinkHandler(e) {
         const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
 
@@ -32,7 +36,7 @@ window.addEventListener('DOMContentLoaded', function name() {
         const targetID = this.getAttribute("href");
         const targetAnchor = document.querySelector(targetID);
         if (!targetAnchor) return;
-        const originalTop = distanceToTop(targetAnchor);
+        const originalTop = distanceToTop(targetAnchor) - 70;
 
         window.scrollBy({
             top: originalTop,
@@ -54,6 +58,8 @@ window.addEventListener('DOMContentLoaded', function name() {
     const linksToAnchors = document.querySelectorAll('a[href^="#"]');
 
     linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
+
+    //Menu background color change
 
     window.addEventListener('scroll', function () {
         let header = document.querySelector('.header'),

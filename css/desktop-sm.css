@@ -1,0 +1,12 @@
+@media (min-width: 1000px) and (max-width: 1100px) {
+  .header .menu {
+    padding: 0 2%;
+  }
+
+  .main .dishes {
+    padding: 20px 40px;
+  }
+  .main .dishes .dish .text-wrapper {
+    max-width: 50%;
+  }
+}

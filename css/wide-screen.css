@@ -1,4 +1,4 @@
-@media all and (min-width: 1441px) {
+@media screen and (min-width: 1441px) {
   .wrapper {
     max-width: 1930px !important;
   }
@@ -24,6 +24,6 @@
     background: url(../images/dishes-bg@wide.jpg) !important;
   }
   .main .personal-events {
-    background: url(../images/events-bg@wide.jpg) !important;
+    background: url(../images/dishes-bg@wide.jpg) !important;
   }
 }
