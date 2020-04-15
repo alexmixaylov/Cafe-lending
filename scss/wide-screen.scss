@@ -1,30 +1,35 @@
 @media screen and (min-width: 1441px) {
     .wrapper {
-        max-width: 1930px!important;
+        max-width: 1930px;
     }
     .main {
         .main-content {
-            background: url(../images/header-bg@wide.jpg)!important;
-            background-position:center!important;
+            background: url(../images/header-bg@wide.jpg);
+            background-position:center;
             padding-top: 11%;
             height: 800px;
+            .bottom-content{
+                .scroll-btn {
+                    margin: 130px 0;
+                }
+            }
         }
         .about-us, .reserve, .contacts {
             max-width: 1440px;
             margin: 0 auto;
         }
         .team, .dishes, .personal-events {
-            padding-left: 10%!important;
-            padding-right: 10% !important;
+            padding-left: 10%;
+            padding-right: 10%;
         }
         .team {
-            background: url(../images/team-bg@wide.jpg)!important;
+            background: url(../images/team-bg@wide.jpg) no-repeat;
         }
         .dishes {
-            background: url(../images/dishes-bg@wide.jpg)!important;
+            background: url(../images/dishes-bg@wide.jpg);
         }
         .personal-events {
-            background: url(../images/dishes-bg@wide.jpg) !important;
+            background: url(../images/dishes-bg@wide.jpg);
         }
     }
 }

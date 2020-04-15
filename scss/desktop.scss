@@ -80,7 +80,7 @@
                     top: 0;
                 }
                 .scroll-btn {
-                    margin: 130px 0;
+                    margin: 117px 0;
                 }
                 .social-links {
                     top: -200px;
@@ -102,7 +102,7 @@
                 }
         }
         .team {
-            background: url(../images/team-bg@2x.jpg);
+            background: url(../images/team-bg@2x.jpg) no-repeat;
             flex-direction: row-reverse;
             flex-wrap: wrap;
             padding: 50px 80px;
@@ -156,6 +156,9 @@
                         max-width: 41.667%;
                         &:nth-child(even) {
                             margin-top: 0;
+                        }
+                        .text {
+                            width: 456px;
                         }
                     }
             }

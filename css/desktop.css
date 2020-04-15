@@ -81,7 +81,7 @@
     top: 0;
   }
   .main .main-content .bottom-content .scroll-btn {
-    margin: 130px 0;
+    margin: 117px 0;
   }
   .main .main-content .bottom-content .social-links {
     top: -200px;
@@ -99,7 +99,7 @@
     max-width: 41.7%;
   }
   .main .team {
-    background: url(../images/team-bg@2x.jpg);
+    background: url(../images/team-bg@2x.jpg) no-repeat;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     padding: 50px 80px;
@@ -156,6 +156,9 @@
   }
   .main .personal-events .events .event:nth-child(even) {
     margin-top: 0;
+  }
+  .main .personal-events .events .event .text {
+    width: 456px;
   }
   .main .personal-events .note {
     margin: 40px 0 0 0;

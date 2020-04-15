@@ -12,6 +12,9 @@
   .main .about-us .text-wrapper {
     max-width: 80%;
   }
+  .main .team {
+    background: url(../images/team-bg@tablet.jpg);
+  }
   .main .team .text-wrapper {
     max-width: 80%;
   }

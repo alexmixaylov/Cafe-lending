@@ -47,7 +47,6 @@ window.addEventListener('DOMContentLoaded', function name() {
         const checkIfDone = setInterval(function () {
             const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
             if (distanceToTop(targetAnchor) === 0 || atBottom) {
-                targetAnchor.tabIndex = "-1";
                 targetAnchor.focus();
                 window.history.pushState("", "", targetID);
                 clearInterval(checkIfDone);
@@ -72,6 +71,5 @@ window.addEventListener('DOMContentLoaded', function name() {
         }
         
     });
-
-
+    
 });

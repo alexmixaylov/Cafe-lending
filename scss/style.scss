@@ -294,7 +294,7 @@ body {
         }
     }
     .team {
-        background: url(../images/team-bg@1x.jpg);
+        background: url(../images/team-bg@1x.jpg) no-repeat;
         background-size: 100% 100%;
         color: $title;
         text-align: center;
@@ -337,7 +337,7 @@ body {
     }
     .reserve {
         padding: 55px 15px;
-         max-width: 100%;
+        max-width: 100%;
         .form-wrapper {
              max-width: 100%;
             .title {
