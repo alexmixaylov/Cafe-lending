@@ -72,4 +72,50 @@ window.addEventListener('DOMContentLoaded', function name() {
         
     });
     
+    //Reserve block date on select
+
+    function date(now) {
+
+        let day = now.getDate(),
+            mounth = now.getMonth();
+            function writeDate() {
+                let select = document.querySelector('#date'),
+                    option = select.querySelectorAll('.option');
+
+                for (let i = 0; i < option.length; i++) {
+                    if (mounth < 10) {
+                        option[i].value = day + '.0' + mounth;
+                    } else {
+                        option[i].value = day + mounth;
+                    }
+                    day++;
+                }
+            }
+
+        writeDate();
+    }
+
+    date(new Date(2020, 3, 30));
+
+    //Slider with dishes
+
+    const slide = document.querySelectorAll('.slider-slide'),
+          nextBtn = document.querySelector('.next-slide'),
+          prevBtn = document.querySelector('.prev-slide');
+
+    let active = 0;
+
+    function switchSlide() {
+        slide[active].classList.remove('hide');
+
+        function nextSlide() {
+            active++;
+        }
+        function prevSlide() {
+            active--;
+        }
+    }
+
+    console.log(active++);
+    console.log(active - 1);
 });

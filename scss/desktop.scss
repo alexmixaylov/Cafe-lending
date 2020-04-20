@@ -28,9 +28,10 @@
         .menu {
             height: 70px;
             background: rgba(255, 255, 255, 0);
+            flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            padding: 0 10%;
+            padding: 0 5%;
             overflow: hidden;
             &.hidden {
                 top: 0;
@@ -59,7 +60,7 @@
     }
     .main {
         .main-content {
-            background: url(../images/header-bg@2x.jpg) no-repeat;
+            background: url(../images/header-bg@2x.jpg);
             background-position: center;
             .subtitle {
                 letter-spacing: 0.5em;

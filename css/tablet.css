@@ -1,13 +1,15 @@
 @media (min-width: 768px) {
   .header .menu {
-    align-items: center;
-  }
-  .header .menu .menu-links.top-menu {
-    margin: 0;
+    padding: 0;
   }
 
   .main .main-content {
     background: url(../images/header-bg@tablet.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .main .main-content .bottom-content .social-links .link-img {
+    width: 60px;
   }
   .main .about-us .text-wrapper {
     max-width: 80%;

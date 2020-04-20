@@ -96,13 +96,13 @@ body input, body select, body button {
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   position: absolute;
   left: 0;
   top: 0;
-  padding-bottom: 100px;
+  padding: 70px 0 20px 0;
   z-index: 99;
   background: rgba(0, 0, 0, 0.9);
   transition: 0.3s all;
@@ -111,19 +111,15 @@ body input, body select, body button {
 .header .menu.hidden {
   top: -100vh;
 }
+.header .menu .menu-links:first-child li:last-child {
+  background-color: rgba(255, 255, 255, 0);
+}
 .header .menu .menu-links {
   width: 300px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 999;
-}
-.header .menu .menu-links.top-menu {
-  margin-top: 15%;
-}
-.header .menu .menu-links.top-menu li:last-child {
-  background-color: rgba(255, 255, 255, 0);
 }
 .header .menu .menu-links li {
   margin-top: 20px;
@@ -134,7 +130,7 @@ body input, body select, body button {
   background-color: #E8C300;
 }
 .header .menu .menu-links li:hover {
-  background-color: #E8C300 !important;
+  background-color: #E8C300;
 }
 .header .menu .menu-links li .link {
   width: 175px;
@@ -150,6 +146,8 @@ body input, body select, body button {
 
 .main .main-content {
   background: url(../images/header-bg@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
   background-size: 100% 100%;
   position: relative;
   padding: 20% 5% 0 5%;
@@ -219,6 +217,7 @@ body input, body select, body button {
   font-weight: bold;
   font-size: 12px;
   line-height: 12px;
+  letter-spacing: 0.3px;
   color: #ffffff;
 }
 .main .main-content .bottom-content .scroll-btn {
@@ -233,6 +232,9 @@ body input, body select, body button {
 }
 .main .main-content .bottom-content .social-links .link:not(:first-child) {
   margin-top: 15px;
+}
+.main .main-content .bottom-content .social-links .link-img {
+  width: 40px;
 }
 .main .about-us {
   text-align: center;
@@ -385,15 +387,25 @@ body input, body select, body button {
   line-height: 20px;
 }
 .main .reserve .img img {
+  margin-top: 25px;
   max-width: 98%;
 }
 .main .reserve .note {
   color: rgba(51, 51, 51, 0.5);
   font-size: 12px;
-  line-height: 12px;
-  width: 100%;
+  line-height: 22px;
+  width: 70%;
   text-align: center;
-  margin-top: 40px;
+  margin: 40px auto 0 auto;
+}
+.main .slider-wrapper .slider-slide:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.main .slider-wrapper .slider-slide {
+  transition: 0.3s;
+}
+.main .slider-wrapper .slider-slide.hide {
+  display: none;
 }
 .main .dishes {
   background: url(../images/dishes-bg@1x.jpg);

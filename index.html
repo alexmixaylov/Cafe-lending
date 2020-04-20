@@ -23,10 +23,10 @@
                 <span class="line"></span>
             </button>
             <nav class="menu hidden">
-                <ul class="menu-links top-menu">
+                <ul class="menu-links">
                     <li><a href="#home" class="link">ДОМАШНЯ</a></li>
                     <li><a href="#about-us" class="link">ПРО НАС</a></li>
-                    <li><a href="#team" class="link">КОМАНДА</a></li>
+                    <li><a href="#team" class="link">ПЕРСОНАЛ</a></li>
                     <li><a href="#reserve" class="link">ЗАРЕЗЕРВУВАТИ</a></li>
                 </ul>
                 <ul class="menu-links">
@@ -46,16 +46,16 @@
                     <a href="#contacts" class="link">ЗАМОВИТИ</a>
                 </div>
                 <div class="bottom-content">
-                    <div class="schedule">Пон - Пн: 11:00 - 22:00, Нд - Сб: 11:00 - 22:00</div>
-                    <a href="#about-us" class="scroll-btn"><img src="images/down-btn.png" alt="прогорнути вниз" class="scroll"></a>
+                    <div class="schedule">Пон - Пт: 11:00 - 16:00, Сб - Нд: 11:00 - 16:00</div>
+                    <a href="#about-us" class="scroll-btn"><img src="images/down-btn.svg" alt="прогорнути вниз" class="scroll"></a>
                     <div class="social-links">
                         <a href="https://www.facebook.com/%D0%A0%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD-%D0%92%D0%B8%D1%88%D0%BD%D0%B5%D0%B2%D0%B8%D0%B9-%D1%81%D0%B0%D0%B4-545114515888831/"
                             class="link" aria-label="відвідати наш facebook">
-                            <img src="images/facebook.png" alt="іконка facebook" class="link-img">
+                            <img src="images/facebook.svg" alt="іконка facebook" class="link-img">
                         </a>
-                        <a href="" class="link" aria-label="написати нам на email"><img src="images/twitter.png" alt="іконка email"
+                        <a href="" class="link" aria-label="написати нам на email"><img src="images/email.svg" alt="іконка email"
                                 class="link-img"></a>
-                        <a href="" class="link" aria-label="відвідати наш instagram"><img src="images/instagram.png" alt="іконка instagram"
+                        <a href="" class="link" aria-label="відвідати наш instagram"><img src="images/instagram.svg" alt="іконка instagram"
                                 class="link-img"></a>
                     </div>
                 </div>
@@ -72,7 +72,10 @@
                     </p>
                 </div>
                 <picture class="img" aria-label="наша смачна страва">
+                    <source srcset="images/about-us@2x.webp" media="(min-width: 1000px)"
+                            type="image/webp">
                     <source srcset="images/about-us@2x.png" media="(min-width: 1000px)">
+                    <source srcset="images/about-us@1x.webp" type="image/webp">
                     <img src="images/about-us@1x.png" alt="наша смачна страва">
                 </picture>
             </div>
@@ -89,7 +92,10 @@
                     </p>
                 </div>
                 <picture class="img" aria-label="наш кухар">
+                    <source srcset="images/team@2x.webp" media="(min-width: 1000px)" 
+                            type="image/webp">
                     <source srcset="images/team@2x.png" media="(min-width: 1000px)">
+                    <source srcset="images/team@1x.webp" type="image/webp">
                     <img src="images/team@1x.png" alt="наш кухар">
                 </picture>
             </div>
@@ -140,7 +146,10 @@
                     </form>
                 </div>
                 <picture class="img" aria-label="фотографія годинника">
+                    <source srcset="images/reserve@2x.webp" media="(min-width: 1000px)" 
+                            type="image/webp">
                     <source srcset="images/reserve@2x.png" media="(min-width: 1000px)">
+                    <source srcset="images/reserve@1x.webp" type="image/webp">
                     <img src="images/reserve@1x.png" alt="фотографія годинника">
                 </picture>
                 <div class="note">
@@ -149,9 +158,12 @@
             </div>
             <div class="dishes slider-wrapper" id="dishes">
                 <h2 class="subtitle">Фірмові страви</h2>
-                <div class="dish slider-slide">
+                <div class="dish slider-slide hide">
                     <picture class="img" aria-label="Наш найсмачніший ">
+                        <source srcset="images/borsch@2x.webp" media="(min-width: 1000px)" 
+                                type="image/webp">
                         <source srcset="images/borsch@2x.png" media="(min-width: 1000px)">
+                        <source srcset="images/borsch@1x.webp" type="image/webp">
                         <img src="images/borsch@1x.png" alt="Наш найсмачніший ">
                     </picture>
                     <div class="text-wrapper">
@@ -163,6 +175,31 @@
                             Поєднуючи ці всі смакові гамми ми досягли неперевершеного насиченого прянно-солодкого смаку, який здивує навіть
                             відомих
                             шеф-кухарів. А подамо Вам наш фірмовий борщик з шматочками сала в поєднанні з гріночками, гострим перчиком і
+                            скибочками
+                            часничку та увінчаємо ці всі чудові смакові поєднання домашньою сметанкою або вареничками!
+                        </p>
+                    </div>
+                </div>
+                <div class="dish slider-slide">
+                    <picture class="img" aria-label="Наш найсмачніший ">
+                        <source srcset="images/borsch@2x.webp" media="(min-width: 1000px)" type="image/webp">
+                        <source srcset="images/borsch@2x.png" media="(min-width: 1000px)">
+                        <source srcset="images/borsch@1x.webp" type="image/webp">
+                        <img src="images/borsch@1x.png" alt="Наш найсмачніший ">
+                    </picture>
+                    <div class="text-wrapper">
+                        <h3 class="title">Фірмовий борщ з вишнею</h3>
+                        <div class="line"></div>
+                        <p class="text">
+                            <b>Наш фірмовий борщ ми готуємо на бурячковому квасі, який настоюється за стародавнім
+                                рецептом наших прабабусь, з
+                                додаванням соковитої, стиглої вишні та соку пряної кисло солодкої сливки та
+                                часничку.</b>
+                            Поєднуючи ці всі смакові гамми ми досягли неперевершеного насиченого прянно-солодкого смаку,
+                            який здивує навіть
+                            відомих
+                            шеф-кухарів. А подамо Вам наш фірмовий борщик з шматочками сала в поєднанні з гріночками,
+                            гострим перчиком і
                             скибочками
                             часничку та увінчаємо ці всі чудові смакові поєднання домашньою сметанкою або вареничками!
                         </p>
@@ -180,17 +217,23 @@
                 <div class="events">
                     <div class="event">
                         <picture class="img" aria-label="У нас можна замовити кайтерінг">
+                            <source srcset="images/wellding@2x.webp" media="(min-width: 1000px)" 
+                                    type="image/webp">
                             <source srcset="images/wellding@2x.png" media="(min-width: 1000px)">
+                            <source srcset="images/wellding@1x.webp" type="image/webp">
                             <img src="images/wellding@1x.png" alt="У нас можна замовити кайтерінг">
                         </picture>
-                        <div class="text">Кайтерінг</div>
+                        <!-- <div class="text">Кайтерінг</div> -->
                     </div>
                     <div class="event">
                         <picture class="img" aria-label="Ми організовуємо корпоративи">
+                            <source srcset="images/company-event@2x.webp" media="(min-width: 1000px)" 
+                                    type="image/webp">
                             <source srcset="images/company-event@2x.png" media="(min-width: 1000px)">
+                            <source srcset="images/company-event@1x.webp" type="image/webp">
                             <img src="images/company-event@1x.png" alt="Ми організовуємо корпоративи">
                         </picture>
-                        <div class="text">корпоративи</div>
+                        <!-- <div class="text">корпоративи</div> -->
                     </div>
                     <p class="note">Для організації приватних подій звертайтесь за телефоном: +38 097 293 76 81 або заповніть контактну форму</p>
                 </div>
@@ -233,8 +276,10 @@
             </div>
         </main>  
         <footer class="footer">
-            © Copyright Mindblister 2019 <a href="https://t.me/DanikNewgarden" class="link">Developer:
-                @daniknewgarden</a>
+            © Copyright Mindblister 2019
+            <a href="https://t.me/DanikNewgarden" class="link">
+                Developer: @daniknewgarden
+            </a>
         </footer> 
     </div>
     <script src="js/scripts.js"></script>
