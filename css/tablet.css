@@ -8,8 +8,12 @@
     background-size: 100%;
     background-repeat: no-repeat;
   }
+  .main .main-content .bottom-content .social-links .link {
+    height: 60px;
+  }
   .main .main-content .bottom-content .social-links .link-img {
     width: 60px;
+    height: 60px;
   }
   .main .about-us .text-wrapper {
     max-width: 80%;
@@ -25,6 +29,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .main .slider-wrapper .btn {
+    display: block;
   }
   .main .dishes, .main .personal-events {
     background: url(../images/dishes-bg@tablet.jpg);

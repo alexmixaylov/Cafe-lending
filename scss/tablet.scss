@@ -11,8 +11,12 @@
             background-repeat: no-repeat;
                 .bottom-content {
                     .social-links {
+                        .link {
+                            height: 60px;
+                        }
                         .link-img {
                             width: 60px;
+                            height: 60px;
                         }
                     }
                 }
@@ -33,6 +37,11 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+        }
+        .slider-wrapper {
+            .btn {
+                display: block;
+            }
         }
         .dishes, .personal-events {
             background: url(../images/dishes-bg@tablet.jpg);

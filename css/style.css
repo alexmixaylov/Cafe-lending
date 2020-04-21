@@ -123,7 +123,6 @@ body input, body select, body button {
 }
 .header .menu .menu-links li {
   margin-top: 20px;
-  border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .header .menu .menu-links li:last-child {
@@ -142,6 +141,11 @@ body input, body select, body button {
   font-weight: bold;
   font-size: 12px;
   line-height: 20px;
+  border-radius: 5px;
+}
+.header .menu .menu-links li .link:focus {
+  outline: none;
+  background-color: #E8C300;
 }
 
 .main .main-content {
@@ -193,11 +197,20 @@ body input, body select, body button {
   color: #ffffff;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: 0.3s all;
+}
+.main .main-content .navigation .link:hover, .main .main-content .navigation .link:focus {
+  outline: none;
+  border: 1px solid #E8C300;
 }
 .main .main-content .navigation .link:last-child {
   margin-top: 30px;
   background: #E8C300;
   border: none;
+}
+.main .main-content .navigation .link:last-child:hover, .main .main-content .navigation .link:last-child:focus {
+  background-color: transparent;
+  border: 1px solid #fff;
 }
 .main .main-content .bottom-content {
   width: 100%;
@@ -230,11 +243,20 @@ body input, body select, body button {
   display: flex;
   flex-direction: column;
 }
+.main .main-content .bottom-content .social-links .link {
+  border-radius: 50px;
+  height: 40px;
+  transition: 0.3s;
+}
+.main .main-content .bottom-content .social-links .link:hover, .main .main-content .bottom-content .social-links .link:focus {
+  border: 1px solid #fff;
+}
 .main .main-content .bottom-content .social-links .link:not(:first-child) {
   margin-top: 15px;
 }
 .main .main-content .bottom-content .social-links .link-img {
   width: 40px;
+  height: 40px;
 }
 .main .about-us {
   text-align: center;
@@ -271,6 +293,7 @@ body input, body select, body button {
 }
 .main .about-us .img {
   max-width: 100%;
+  margin: 50px 0;
 }
 .main .about-us .img img {
   max-width: 100%;
@@ -310,10 +333,17 @@ body input, body select, body button {
   line-height: 28px;
 }
 .main .team .img {
+  margin: 50px 0;
   max-width: 100%;
 }
 .main .team .img img {
   max-width: 100%;
+}
+.main .form .input:hover, .main .form .input:focus,
+.main .form .select:hover, .main .form .select:focus {
+  transition: 0.3s;
+  outline: none;
+  border: 5px solid #E8C300;
 }
 .main .reserve {
   padding: 55px 15px;
@@ -406,6 +436,13 @@ body input, body select, body button {
   background-color: transparent;
   position: absolute;
   top: 40%;
+  display: none;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+.main .slider-wrapper .btn:focus {
+  outline: none;
+  opacity: 1;
 }
 .main .slider-wrapper .btn.prev-slide {
   left: 0px;
@@ -456,6 +493,7 @@ body input, body select, body button {
   letter-spacing: 0.5em;
 }
 .main .dishes .dish .img {
+  margin: 50px 0;
   max-width: 100%;
 }
 .main .dishes .dish .img img {
@@ -635,6 +673,5 @@ body input, body select, body button {
   text-align: center;
 }
 .footer .link {
-  width: 100%;
   color: rgba(255, 255, 255, 0.5);
 }

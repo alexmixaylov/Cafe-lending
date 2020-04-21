@@ -87,8 +87,9 @@
   .main .main-content .bottom-content .social-links {
     top: -200px;
   }
-  .main .about-us .img, .main .team .img, .main .reserve .img, .main .dishes .img, .main .events .img {
-    max-width: 41.661%;
+  .main .about-us .img, .main .team .img, .main .reserve .img, .main .dish .img, .main .events .img {
+    margin: 0;
+    max-width: 45.661%;
   }
   .main .about-us {
     flex-direction: row;
@@ -142,6 +143,9 @@
   }
   .main .dishes .dish:nth-child(even) {
     flex-direction: row-reverse;
+  }
+  .main .dishes .dish .img {
+    margin: 0;
   }
   .main .personal-events {
     background: url(../images/dishes-bg@2x.jpg);

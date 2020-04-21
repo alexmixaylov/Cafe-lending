@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    // border: 1px solid red!important;
 }
 body {
     margin: 0;
@@ -132,7 +131,6 @@ body {
             align-items: center;
             li {
                 margin-top: 20px;
-                border-radius: 5px;
                 border: 1px solid rgba(255, 255, 255, 0.5);
                 &:last-child {
                     background-color: $yellow;
@@ -150,6 +148,11 @@ body {
                     font-weight: bold;
                     font-size: 12px;
                     line-height: 20px;
+                    border-radius: 5px;
+                    &:focus {
+                        outline: none;
+                        background-color: $yellow;
+                    }
                 }
             }
         }
@@ -207,11 +210,20 @@ body {
                 color: $title;
                 border-radius: 5px;
                 border: 1px solid rgba(255, 255, 255, 0.5);
-
+                transition: .3s all;
+                &:hover, &:focus {
+                    outline: none;
+                    border: 1px solid $yellow;
+                }
                 &:last-child {
                     margin-top: 30px;
                     background: $yellow;
                     border: none;
+                        &:hover,
+                        &:focus {
+                            background-color: transparent;
+                            border: 1px solid #fff;
+                        }
                 }
             }
         }
@@ -246,11 +258,20 @@ body {
                 right: 0;
                 display: flex;
                 flex-direction: column;
+                .link {
+                    border-radius: 50px;
+                    height: 40px;
+                    transition: .3s;
+                    &:hover, &:focus {
+                        border: 1px solid #fff;
+                    }
+                }
                 .link:not(:first-child) {
                     margin-top: 15px;
                 }
                 .link-img {
                     width: 40px;
+                    height: 40px;
                 }
             }
         }
@@ -290,6 +311,7 @@ body {
         }
         .img {
             max-width: 100%;
+            margin: 50px 0;
             img {
                 max-width: 100%;
             }
@@ -330,11 +352,19 @@ body {
             }
         }
         .img {
+            margin: 50px 0;
             max-width: 100%;
-
             img {
                 max-width: 100%;
             }
+        }
+    }
+    .form {
+        .input:hover, .input:focus,
+        .select:hover, .select:focus {
+            transition: .3s;
+            outline: none;
+            border: 5px solid $yellow;
         }
     }
     .reserve {
@@ -436,6 +466,13 @@ body {
             background-color: transparent;
             position: absolute;
             top: 40%;
+            display: none;
+            transition: .3s;
+            opacity: .8;
+            &:focus {
+                outline: none;
+                opacity: 1  ;
+            }
             &.prev-slide {
                 left: 0px;
                 transform: rotate(90deg);
@@ -491,8 +528,8 @@ body {
         }
         .dish {
             .img {
+                margin: 50px 0;
                 max-width: 100%;
-
                 img {
                     max-width: 100%;
                 }
@@ -686,7 +723,6 @@ body {
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
     .link {
-        width: 100%;
         color: rgba(255, 255, 255, 0.5);
     }
 }
