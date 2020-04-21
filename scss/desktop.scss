@@ -46,11 +46,17 @@
                     }
                     li {
                         border: none;
-                        transition: .3s all;
                         &:last-child {
                             background-color: rgba(255, 255, 255, 0);
+                            border-radius: 5px;
+                                &:focus,
+                                &:hover {
+                                    outline: none;
+                                    background-color: #E8C300;
+                                }
                         }
                         .link {
+                            transition: .3s all;
                             padding: 10px;
                             width: 100%;
                         }
