@@ -158,7 +158,10 @@
             </div>
             <div class="dishes slider-wrapper" id="dishes">
                 <h2 class="subtitle">Фірмові страви</h2>
-                <div class="dish slider-slide hide">
+                <button class="btn prev-slide" type="button">
+                    <img src="images/down-btn.svg" alt="Попередній слайд" class="btn-img">
+                </button>
+                <div class="dish slider-slide active">
                     <picture class="img" aria-label="Наш найсмачніший ">
                         <source srcset="images/borsch@2x.webp" media="(min-width: 1000px)" 
                                 type="image/webp">
@@ -188,27 +191,37 @@
                         <img src="images/borsch@1x.png" alt="Наш найсмачніший ">
                     </picture>
                     <div class="text-wrapper">
-                        <h3 class="title">Фірмовий борщ з вишнею</h3>
+                        <h3 class="title">Кюре</h3>
                         <div class="line"></div>
                         <p class="text">
-                            <b>Наш фірмовий борщ ми готуємо на бурячковому квасі, який настоюється за стародавнім
-                                рецептом наших прабабусь, з
-                                додаванням соковитої, стиглої вишні та соку пряної кисло солодкої сливки та
-                                часничку.</b>
-                            Поєднуючи ці всі смакові гамми ми досягли неперевершеного насиченого прянно-солодкого смаку,
-                            який здивує навіть
-                            відомих
-                            шеф-кухарів. А подамо Вам наш фірмовий борщик з шматочками сала в поєднанні з гріночками,
-                            гострим перчиком і
-                            скибочками
-                            часничку та увінчаємо ці всі чудові смакові поєднання домашньою сметанкою або вареничками!
+                            <b>«Кюре» це прекрасне поеднання каре телятини з ягідно-пікантним соусом та сиром «Брі»</b>
                         </p>
                     </div>
                 </div>
+                <div class="dish slider-slide">
+                    <picture class="img" aria-label="Наш найсмачніший ">
+                        <source srcset="images/borsch@2x.webp" media="(min-width: 1000px)" type="image/webp">
+                        <source srcset="images/borsch@2x.png" media="(min-width: 1000px)">
+                        <source srcset="images/borsch@1x.webp" type="image/webp">
+                        <img src="images/borsch@1x.png" alt="Наш найсмачніший ">
+                    </picture>
+                    <div class="text-wrapper">
+                        <h3 class="title">Плов «Узбецький святковий»</h3>
+                        <div class="line"></div>
+                        <p class="text">
+                            <b>Плов «Узбецький святковий» блюдо східної кухні але ми допрацювали його смак та презентацію. Добавили курагу та барбарис
+                            і секретний інгредієнт!
+                            </b>
+                        </p>
+                    </div>
+                </div>
+                <button class="btn next-slide" type="button">
+                    <img src="images/down-btn.svg" alt="Наступний слайд" class="btn-img">
+                </button>
                 <div class="slider-pagination">
-                    <div class="round acvite"></div>
-                    <div class="round"></div>
-                    <div class="round"></div>
+                    <div class="pagination round active"></div>
+                    <div class="pagination round"></div>
+                    <div class="pagination round"></div>
                 </div>     
             </div>
 
@@ -223,7 +236,6 @@
                             <source srcset="images/wellding@1x.webp" type="image/webp">
                             <img src="images/wellding@1x.png" alt="У нас можна замовити кайтерінг">
                         </picture>
-                        <!-- <div class="text">Кайтерінг</div> -->
                     </div>
                     <div class="event">
                         <picture class="img" aria-label="Ми організовуємо корпоративи">
@@ -233,7 +245,6 @@
                             <source srcset="images/company-event@1x.webp" type="image/webp">
                             <img src="images/company-event@1x.png" alt="Ми організовуємо корпоративи">
                         </picture>
-                        <!-- <div class="text">корпоративи</div> -->
                     </div>
                     <p class="note">Для організації приватних подій звертайтесь за телефоном: +38 097 293 76 81 або заповніть контактну форму</p>
                 </div>

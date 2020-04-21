@@ -398,14 +398,50 @@ body input, body select, body button {
   text-align: center;
   margin: 40px auto 0 auto;
 }
+.main .slider-wrapper {
+  position: relative;
+}
+.main .slider-wrapper .btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 40%;
+}
+.main .slider-wrapper .btn.prev-slide {
+  left: 0px;
+  transform: rotate(90deg);
+}
+.main .slider-wrapper .btn.next-slide {
+  right: 0px;
+  transform: rotate(-90deg);
+}
 .main .slider-wrapper .slider-slide:nth-child(even) {
   flex-direction: row-reverse;
 }
 .main .slider-wrapper .slider-slide {
   transition: 0.3s;
-}
-.main .slider-wrapper .slider-slide.hide {
   display: none;
+}
+.main .slider-wrapper .slider-slide.active {
+  display: flex;
+  flex-direction: column;
+}
+.main .slider-wrapper .slider-pagination {
+  margin: 40px 0 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.main .slider-wrapper .slider-pagination .round {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+.main .slider-wrapper .slider-pagination .round.active {
+  background: white;
+}
+.main .slider-wrapper .slider-pagination .round:not(:first-child):not(:last-child) {
+  margin: 0 20px;
 }
 .main .dishes {
   background: url(../images/dishes-bg@1x.jpg);
@@ -446,23 +482,6 @@ body input, body select, body button {
   font-size: 18px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.9);
-}
-.main .dishes .slider-pagination {
-  margin: 40px 0 20px 0;
-  display: flex;
-  justify-content: center;
-}
-.main .dishes .slider-pagination .round {
-  width: 10px;
-  height: 10px;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-}
-.main .dishes .slider-pagination .round:not(:first-child):not(:last-child) {
-  margin: 0 20px;
-}
-.main .dishes .slider-pagination .round.active {
-  background-color: #fff;
 }
 .main .personal-events {
   background: url(../images/dishes-bg@1x.jpg);
@@ -616,5 +635,6 @@ body input, body select, body button {
   text-align: center;
 }
 .footer .link {
+  width: 100%;
   color: rgba(255, 255, 255, 0.5);
 }

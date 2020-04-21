@@ -123,6 +123,9 @@
   .main .reserve .form-wrapper {
     max-width: 39.3%;
   }
+  .main .slider-wrapper .slider-slide.active {
+    flex-direction: row;
+  }
   .main .dishes {
     background: url(../images/dishes-bg@2x.jpg);
     padding: 20px 80px;
@@ -131,12 +134,14 @@
     margin-bottom: 50px;
   }
   .main .dishes .dish {
-    display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .main .dishes .dish .text-wrapper {
     max-width: 38.957%;
+  }
+  .main .dishes .dish:nth-child(even) {
+    flex-direction: row-reverse;
   }
   .main .personal-events {
     background: url(../images/dishes-bg@2x.jpg);

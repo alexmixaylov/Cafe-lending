@@ -430,13 +430,51 @@ body {
         }
     }
     .slider-wrapper {
+        position: relative;
+        .btn {
+            border: none;
+            background-color: transparent;
+            position: absolute;
+            top: 40%;
+            &.prev-slide {
+                left: 0px;
+                transform: rotate(90deg);
+            }
+            &.next-slide {
+                right: 0px;
+                transform: rotate(-90deg);
+            }
+        }
         .slider-slide:nth-child(even) {
             flex-direction: row-reverse;
         }
         .slider-slide {
             transition: .3s;
-            &.hide {
-                display: none;
+            display: none;
+            &.active {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .slider-pagination {
+            margin: 40px 0 20px 0;
+            display: flex;
+            justify-content: center;
+
+            .round {
+                width: 10px;
+                height: 10px;
+                background: rgba(255, 255, 255, 0.5);
+                border-radius: 10px;
+
+                &.active {
+                     background: rgba(255, 255, 255, 1);
+                }
+
+                &:not(:first-child):not(:last-child) {
+                    margin: 0 20px;
+                }
+
             }
         }
     }
@@ -483,23 +521,6 @@ body {
                     font-size: 18px;
                     line-height: 28px;
                     color: rgba(255, 255, 255, 0.9);
-                }
-            }
-        }
-        .slider-pagination {
-            margin: 40px 0 20px 0;
-            display: flex;
-            justify-content: center;
-            .round {
-                width: 10px;
-                height: 10px;
-                background: rgba(255, 255, 255, 0.5);
-                border-radius: 10px;
-                &:not(:first-child):not(:last-child) {
-                    margin: 0 20px;
-                }
-                &.active {
-                    background-color: #fff;
                 }
             }
         }
@@ -665,6 +686,7 @@ body {
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
     .link {
+        width: 100%;
         color: rgba(255, 255, 255, 0.5);
     }
 }

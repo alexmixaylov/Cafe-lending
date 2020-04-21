@@ -126,18 +126,27 @@
                 max-width: 39.3%;
             }
         }
-        .dishes {
+        .slider-wrapper {
+            .slider-slide {
+                &.active {
+                    flex-direction: row;
+                }
+            }
+        }
+        .dishes { 
             background: url(../images/dishes-bg@2x.jpg);
             padding: 20px 80px;
             .subtitle {
                 margin-bottom: 50px;
             }
             .dish {
-                display: flex;
                 justify-content: space-between;
                 align-items: center;
                 .text-wrapper {
                     max-width: 38.957%;
+                }
+                &:nth-child(even) {
+                    flex-direction: row-reverse;
                 }
             }
         }
