@@ -74,26 +74,26 @@ window.addEventListener('DOMContentLoaded', function name() {
     
     //Reserve block date on select
 
-    // function date(now) {
+    function date(now) {
 
-    //     let day = now.getDate(),
-    //         mounth = now.getMonth();
-    //         function writeDate() {
+        let day = now.getDate(),
+            mounth = now.getMonth();
+            function writeDate() {
 
-    //             let select = document.querySelector('#date'),
-    //                 option = select.querySelectorAll('.option');
+                let select = document.querySelector('#date'),
+                    option = select.querySelectorAll('.option');
 
-    //             for (let i = 0; i < option.length; i++) {
+                for (let i = 0; i < option.length; i++) {
                     
-    //                 day++;
-    //             }
+                    day++;
+                }
 
-    //         }
+            }
 
-    //     writeDate();
-    // }
+        writeDate();
+    }
 
-    // date(new Date());
+    date(new Date());
 
     //Slider with dishes
 
