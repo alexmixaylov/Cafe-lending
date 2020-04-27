@@ -455,10 +455,14 @@ body input, body select, body button {
 .main .slider-wrapper .slider-slide {
   transition: 0.3s;
   display: none;
+  opacity: 0;
 }
 .main .slider-wrapper .slider-slide.active {
   display: flex;
   flex-direction: column;
+}
+.main .slider-wrapper .slider-slide.active.animate {
+  opacity: 1;
 }
 .main .slider-wrapper .slider-pagination {
   margin: 40px 0 20px 0;

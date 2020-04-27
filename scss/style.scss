@@ -485,9 +485,13 @@ body {
         .slider-slide {
             transition: .3s;
             display: none;
+            opacity: 0;
             &.active {
                 display: flex;
                 flex-direction: column;
+                &.animate {
+                    opacity: 1;
+                }
             }
         }
         .slider-pagination {

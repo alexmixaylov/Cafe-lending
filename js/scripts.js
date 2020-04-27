@@ -106,15 +106,15 @@ window.addEventListener('DOMContentLoaded', function name() {
 
     function hideSlide() {
         slides[active].classList.remove('active');
+        slides[active].classList.remove('animate');
         pagination[active].classList.remove('active');
-        setTimeout(() => {
-            slides[active].classList.add('hide');
-        }, 300);
     }
 
     function showSlide() {
-        slides[active].classList.remove('hide');
         slides[active].classList.add('active');
+        setTimeout(() => {
+            slides[active].classList.add('animate');
+        }, 100);
         pagination[active].classList.add('active');
     }
 
