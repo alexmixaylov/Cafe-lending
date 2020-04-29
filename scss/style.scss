@@ -458,6 +458,7 @@ body {
     }
     .slider-wrapper {
         position: relative;
+        min-height: 810px; //FIXME: 
         .btn {
             border: none;
             background-color: transparent;
@@ -490,7 +491,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 &.animate {
-                    opacity: ;
+                    opacity: 1;
                 }
             }
         }
@@ -561,6 +562,118 @@ body {
                     color: rgba(255, 255, 255, 0.9);
                 }
             }
+        }
+    }
+    .menu {
+        .title {
+            margin: 0;
+            font-family: Caveat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 48px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .line {
+            display: block;
+            margin: 15px auto;
+            background: #E8C300;
+            width: 40px;
+            height: 5px;
+            border-radius: 5px;
+        }
+        .text {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        .menu-container {
+            padding: 50px 15px;
+            .tabs-nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .menu-link {
+                    min-width: 24.74%;
+                    height: 50px;
+                    background-color: transparent;
+                    margin-bottom: 10px;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 18px;
+                    transition: .3s;
+                    border-left: 1px solid #D6D6D6;
+                    &:first-child {
+                        border: none;
+                    }
+                    &.active, &:focus, &:hover {
+                        outline: none;
+                        border-left: 1px solid #E8C300!important;
+                        color: #E8C300;
+                    }
+                }
+            }
+            .content {
+                margin-top: 50px;
+                .tab-content {
+                    .menu-list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .menu-item {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            margin-bottom: 20px;
+                            .text {
+                                text-align: left;
+                                .name {
+                                    text-transform: uppercase;
+                                    margin: 0 0 10px 0;
+                                    font-family: Caveat;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    line-height: 25px;
+                                }
+                                .subtitle {
+                                    margin: 0;
+                                    font-family: Caveat;
+                                    font-style: normal;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    line-height: 18px;
+                                    color: #999999;
+                                }
+                            }
+                            .price {
+                                text-transform: uppercase;
+                                margin: 0 0 0 20px;
+                                font-family: Caveat;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 18px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .show {
+            display: flex;
+        }
+
+        .hide {
+            display: none;
         }
     }
     .personal-events {

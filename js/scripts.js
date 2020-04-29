@@ -147,7 +147,7 @@ window.addEventListener('DOMContentLoaded', function name() {
 
     setInterval(() => {
         nextSlide();
-    }, 5000);
+    }, 8000);
 
     //Swipe control
 
@@ -186,5 +186,46 @@ window.addEventListener('DOMContentLoaded', function name() {
         xDown = null;
         yDown = null;
     }
+
+    //Menu tabs
+
+    function menuTabs(container) {
+        let tab = container.querySelectorAll('.menu-link'),
+            info = container.querySelector('.tabs-nav'),
+            tabContent = container.querySelectorAll('.tab-content');
+
+        function hideTabContent(a) {
+            for (let i = a; i < tabContent.length; i++) {
+                tabContent[i].classList.remove('show');
+                tabContent[i].classList.add('hide');
+            }
+        }
+
+        hideTabContent(1);
+
+        function showTabContent(b) {
+            if (tabContent[b].classList.contains('hide')) {
+                tabContent[b].classList.remove('hide');
+                tabContent[b].classList.add('show');
+            }
+        }
+
+        info.addEventListener('click', function (event) {
+            let target = event.target;
+            if (target && target.classList.contains('menu-link')) {
+                    event.target.classList.add('active');
+                for (let i = 0; i < tab.length; i++) {
+                    tab[i].classList.remove('active');
+                    if (target == tab[i]) {
+                        hideTabContent(0);
+                        showTabContent(i);
+                        break;
+                    }
+                }
+            }
+        });
+    }
+
+    menuTabs(document.querySelector('.menu-container'));
 
 });

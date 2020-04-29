@@ -427,6 +427,7 @@ body input, body select, body button {
 }
 .main .slider-wrapper {
   position: relative;
+  min-height: 810px;
 }
 .main .slider-wrapper .btn {
   border: none;
@@ -521,6 +522,111 @@ body input, body select, body button {
   font-size: 18px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.9);
+}
+.main .menu .title {
+  margin: 0;
+  font-family: Caveat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main .menu .line {
+  display: block;
+  margin: 15px auto;
+  background: #E8C300;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+}
+.main .menu .text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+.main .menu .menu-container {
+  padding: 50px 15px;
+}
+.main .menu .menu-container .tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main .menu .menu-container .tabs-nav .menu-link {
+  min-width: 24.74%;
+  height: 50px;
+  background-color: transparent;
+  margin-bottom: 10px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  transition: 0.3s;
+  border-left: 1px solid #D6D6D6;
+}
+.main .menu .menu-container .tabs-nav .menu-link:first-child {
+  border: none;
+}
+.main .menu .menu-container .tabs-nav .menu-link.active, .main .menu .menu-container .tabs-nav .menu-link:focus, .main .menu .menu-container .tabs-nav .menu-link:hover {
+  outline: none;
+  border-left: 1px solid #E8C300 !important;
+  color: #E8C300;
+}
+.main .menu .menu-container .content {
+  margin-top: 50px;
+}
+.main .menu .menu-container .content .tab-content .menu-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .menu .menu-container .content .tab-content .menu-list .menu-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.main .menu .menu-container .content .tab-content .menu-list .menu-item .text {
+  text-align: left;
+}
+.main .menu .menu-container .content .tab-content .menu-list .menu-item .text .name {
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  font-family: Caveat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+.main .menu .menu-container .content .tab-content .menu-list .menu-item .text .subtitle {
+  margin: 0;
+  font-family: Caveat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #999999;
+}
+.main .menu .menu-container .content .tab-content .menu-list .menu-item .price {
+  text-transform: uppercase;
+  margin: 0 0 0 20px;
+  font-family: Caveat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+.main .menu .show {
+  display: flex;
+}
+.main .menu .hide {
+  display: none;
 }
 .main .personal-events {
   background: url(../images/dishes-bg@1x.jpg);
