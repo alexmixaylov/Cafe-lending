@@ -30,11 +30,23 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .main .slider-wrapper {
+    max-height: 730px;
+    min-height: 730px;
+  }
   .main .slider-wrapper .btn {
     display: block;
   }
   .main .dishes, .main .personal-events {
     background: url(../images/dishes-bg@tablet.jpg);
+  }
+  .main .menu {
+    padding: 50px 30px;
+  }
+  .main .menu .menu-container .content .menu-list .menu-item {
+    margin-top: 40px;
+    flex-basis: 45%;
+    min-width: 365px;
   }
   .main .personal-events .events {
     display: flex;

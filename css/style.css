@@ -232,7 +232,13 @@ body input, body select, body button {
 }
 .main .main-content .bottom-content .scroll-btn {
   margin: 130px 0;
-  max-height: 60px;
+  height: 63px;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+.main .main-content .bottom-content .scroll-btn:focus, .main .main-content .bottom-content .scroll-btn:hover {
+  outline: none;
+  border: 1px solid #E8C300;
 }
 .main .main-content .bottom-content .social-links {
   position: absolute;
@@ -247,6 +253,7 @@ body input, body select, body button {
 }
 .main .main-content .bottom-content .social-links .link:hover, .main .main-content .bottom-content .social-links .link:focus {
   border: 1px solid #fff;
+  outline: none;
 }
 .main .main-content .bottom-content .social-links .link:not(:first-child) {
   margin-top: 15px;
@@ -340,7 +347,7 @@ body input, body select, body button {
 .main .form .select:hover, .main .form .select:focus {
   transition: 0.3s;
   outline: none;
-  border: 5px solid #E8C300;
+  border: 3px solid #E8C300;
 }
 .main .reserve {
   padding: 55px 15px;
@@ -412,6 +419,13 @@ body input, body select, body button {
   font-weight: bold;
   font-size: 12px;
   line-height: 20px;
+  transition: 0.3s;
+}
+.main .reserve .form-wrapper .form .button:focus, .main .reserve .form-wrapper .form .button:hover {
+  border: 3px solid #E8C300;
+  color: #E8C300;
+  background-color: transparent;
+  outline: none;
 }
 .main .reserve .img img {
   margin-top: 25px;
@@ -523,6 +537,9 @@ body input, body select, body button {
   line-height: 28px;
   color: rgba(255, 255, 255, 0.9);
 }
+.main .menu {
+  padding: 50px 15px;
+}
 .main .menu .title {
   margin: 0;
   font-family: Caveat;
@@ -548,9 +565,9 @@ body input, body select, body button {
   font-size: 18px;
   line-height: 28px;
   text-align: center;
-}
-.main .menu .menu-container {
-  padding: 50px 15px;
+  padding: 0 15px;
+  max-width: 565px;
+  margin: 0 auto;
 }
 .main .menu .menu-container .tabs-nav {
   display: flex;
@@ -584,15 +601,18 @@ body input, body select, body button {
 .main .menu .menu-container .content .tab-content .menu-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .main .menu .menu-container .content .tab-content .menu-list .menu-item {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 .main .menu .menu-container .content .tab-content .menu-list .menu-item .text {
+  margin: 0;
+  padding: 0;
   text-align: left;
 }
 .main .menu .menu-container .content .tab-content .menu-list .menu-item .text .name {
@@ -627,6 +647,17 @@ body input, body select, body button {
 }
 .main .menu .hide {
   display: none;
+}
+.main .menu .note {
+  color: rgba(51, 51, 51, 0.5);
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 21px;
 }
 .main .personal-events {
   background: url(../images/dishes-bg@1x.jpg);
@@ -744,6 +775,12 @@ body input, body select, body button {
   font-weight: bold;
   font-size: 12px;
   line-height: 20px;
+}
+.main .contacts .form .button:focus, .main .contacts .form .button:hover {
+  border: 3px solid #E8C300;
+  color: #E8C300;
+  background-color: transparent;
+  outline: none;
 }
 .main .contacts .form .note {
   margin-top: 30px;

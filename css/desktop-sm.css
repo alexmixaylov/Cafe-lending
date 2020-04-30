@@ -3,8 +3,16 @@
     padding: 0 1%;
   }
 
+  .main .slider-wrapper {
+    min-height: 600px;
+    max-height: 600px;
+  }
   .main .dishes {
     padding: 20px 40px;
+  }
+  .main .dishes .dish {
+    margin: 0 auto;
+    max-width: 90%;
   }
   .main .dishes .dish .text-wrapper {
     max-width: 50%;

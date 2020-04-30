@@ -187,6 +187,43 @@ window.addEventListener('DOMContentLoaded', function name() {
         yDown = null;
     }
 
+    //Date to reserve select
+
+    function date() {
+        let date = new Date(),
+            select = document.querySelector('#date'),
+            option = select.querySelectorAll('option');
+
+        function changeContent(day, mounth) {
+            for (let i = 0; i < option.length; i++) {
+
+                day = date.getDate();
+                mounth = date.getMonth();
+
+                if (day < 10 && mounth < 10) {
+                    option[i].value = '0' + day + '.0' + mounth;
+                    option[i].textContent = '0' + day + '.0' + mounth;
+                } else if (day < 10) {
+                    option[i].value = '0' + day + '.' + mounth;
+                    option[i].textContent = '0' + day + '.' + mounth;
+                } else if (mounth < 10) {
+                    option[i].value = day + '.0' + mounth;
+                    option[i].textContent = day + '.0' + mounth;
+                } else {
+                    option[i].value = day + '.' + mounth;
+                    option[i].textContent = day + '.' + mounth;
+                }
+
+                date.setDate(date.getDate() + 1);
+
+            }
+        }
+
+        changeContent();
+    }
+
+    date();
+
     //Menu tabs
 
     function menuTabs(container) {

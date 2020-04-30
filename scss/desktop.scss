@@ -134,6 +134,8 @@
             }
         }
         .slider-wrapper {
+            min-height: 675px;
+            max-height: 675px;
             .slider-slide {
                 &.active {
                     flex-direction: row;
@@ -157,6 +159,27 @@
                 }
                 .img {
                     margin: 0;
+                }
+            }
+        }
+        .menu {
+            padding: 100px 80px 50px 80px;
+            .menu-container {
+                .tabs-nav {
+                    margin-top: 50px;
+                    .menu-link {
+                        min-width: 120px;
+                    }
+                }
+
+                .content {
+                    .menu-list {
+                        width: 100%;
+                        .menu-item {
+                            flex-basis: 33%;
+                            max-width: 365px;
+                        }
+                    }
                 }
             }
         }

@@ -39,12 +39,28 @@
             justify-content: center;
         }
         .slider-wrapper {
+            max-height: 730px;
+            min-height: 730px;
             .btn {
                 display: block;
             }
         }
         .dishes, .personal-events {
             background: url(../images/dishes-bg@tablet.jpg);
+        }
+        .menu {
+            padding: 50px 30px;
+            .menu-container {
+                .content {
+                    .menu-list {
+                        .menu-item {
+                            margin-top: 40px;
+                            flex-basis: 45%;
+                            min-width: 365px;
+                        }
+                    }
+                }
+            }
         }
         .personal-events {
             .events {

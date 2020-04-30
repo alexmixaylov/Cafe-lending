@@ -5,9 +5,15 @@
         }
     }
     .main {
+        .slider-wrapper {
+            min-height: 600px;
+            max-height: 600px;
+        }
         .dishes {
             padding: 20px 40px;
             .dish {
+                margin: 0 auto;
+                max-width: 90%;
                 .text-wrapper {
                     max-width: 50%;
                 }
