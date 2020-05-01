@@ -629,12 +629,15 @@ body {
                     transition: .3s;
                     border-left: 1px solid #D6D6D6;
                     &:first-child {
-                        border: none;
+                        border-left: none;
                     }
                     &.active, &:focus, &:hover {
                         outline: none;
-                        border-left: 1px solid #E8C300!important;
+                        border-left: 1px solid #E8C300;
                         color: #E8C300;
+                        &:first-child {
+                            border-left: none;
+                        }
                     }
                 }
             }

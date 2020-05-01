@@ -589,12 +589,15 @@ body input, body select, body button {
   border-left: 1px solid #D6D6D6;
 }
 .main .menu .menu-container .tabs-nav .menu-link:first-child {
-  border: none;
+  border-left: none;
 }
 .main .menu .menu-container .tabs-nav .menu-link.active, .main .menu .menu-container .tabs-nav .menu-link:focus, .main .menu .menu-container .tabs-nav .menu-link:hover {
   outline: none;
-  border-left: 1px solid #E8C300 !important;
+  border-left: 1px solid #E8C300;
   color: #E8C300;
+}
+.main .menu .menu-container .tabs-nav .menu-link.active:first-child, .main .menu .menu-container .tabs-nav .menu-link:focus:first-child, .main .menu .menu-container .tabs-nav .menu-link:hover:first-child {
+  border-left: none;
 }
 .main .menu .menu-container .content {
   margin-top: 50px;
