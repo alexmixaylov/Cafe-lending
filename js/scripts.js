@@ -201,17 +201,17 @@ window.addEventListener('DOMContentLoaded', function name() {
                 mounth = date.getMonth();
 
                 if (day < 10 && mounth < 10) {
-                    option[i].value = '0' + day + '.0' + mounth;
-                    option[i].textContent = '0' + day + '.0' + mounth;
+                    option[i].value = `0${day}.0${mounth}`;
+                    option[i].textContent = `0${day}.0${mounth}`;
                 } else if (day < 10) {
-                    option[i].value = '0' + day + '.' + mounth;
-                    option[i].textContent = '0' + day + '.' + mounth;
+                    option[i].value = `0${day}.${mounth}`;
+                    option[i].textContent = `0${day}.${mounth}`;
                 } else if (mounth < 10) {
-                    option[i].value = day + '.0' + mounth;
-                    option[i].textContent = day + '.0' + mounth;
+                    option[i].value = `${day}.0${mounth}`;
+                    option[i].textContent = `${day}.0${mounth}`;
                 } else {
-                    option[i].value = day + '.' + mounth;
-                    option[i].textContent = day + '.' + mounth;
+                    option[i].value = `${day}.${mounth}`;
+                    option[i].textContent = `${day}.${mounth}`;
                 }
 
                 date.setDate(date.getDate() + 1);
