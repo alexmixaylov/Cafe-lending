@@ -147,7 +147,7 @@ window.addEventListener('DOMContentLoaded', function name() {
 
     setInterval(() => {
         nextSlide();
-    }, 8000);
+    }, 16000);
 
     //Swipe control
 
